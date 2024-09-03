@@ -10,7 +10,6 @@ body {
     max-width: 600px;
     margin: 0 auto;
     background-color: #e3e6e6;
-    border-radius: 0;
     overflow: hidden;
     padding: 20px;
 }
@@ -32,7 +31,7 @@ body {
     color: #ffffff;
     border: 1px solid #dee2e2;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .content h2 {
@@ -52,14 +51,14 @@ body {
 
 
 .signature-container {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px  
+    
 }
 
 .signature-header {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .signature-header img {
@@ -67,46 +66,58 @@ body {
     width: 80px;
     height: 80px;
     margin-right: 20px;
+    align-items: center;
+    justify-items: center;
 }
 
 .signature-info {
+    flex-grow: 1;
     color: #333;
 }
-
 .signature-info h2 {
     margin: 0;
     font-size: 18px;
-    color: #5555a5;
+    color: #0088f7;
 }
 
 .signature-info p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 2px 0;
+    font-size: 12px;
     color: #777;
 }
 
 .signature-info a {
-    color: #5555a5;
+    color: #0088f7 ;
     text-decoration: none;
 }
 
-.signature-info a:hover {
-    text-decoration: underline;
-}
+
 
 .signature-social-icons {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .signature-social-icons img {
-    width: 24px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .signature-footer {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 12px;
     color: #888888;
-    text-decoration: none;;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+
+
+#grad{
+    /* background-image: linear-gradient(to right, rgb(229, 41, 41) , yellow); */
 }
