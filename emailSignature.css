@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e6e6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #e3e6e6;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.email-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.email-header img {
+    max-width: 60px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+    color: #ffffff;
+    border: 1px solid #dee2e2;
+    background: white;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin: 0;
+    color: #666666;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.content p {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: #666666;
+}
+
+
+
+.signature-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signature-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signature-header img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.signature-info {
+    color: #333;
+}
+
+.signature-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #5555a5;
+}
+
+.signature-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.signature-info a {
+    color: #5555a5;
+    text-decoration: none;
+}
+
+.signature-info a:hover {
+    text-decoration: underline;
+}
+
+.signature-social-icons {
+    margin-top: 10px;
+}
+
+.signature-social-icons img {
+    width: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.signature-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888888;
+    text-decoration: none;;
+}
