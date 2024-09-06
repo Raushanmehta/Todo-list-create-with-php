@@ -1,0 +1,74 @@
+<?php
+$insert = false;
+$serverName = "localhost";
+$userName = "root";
+$password = "";
+$database = "demo";
+
+
+$connection = mysqli_connect($serverName, $userName, $password, $database);
+if (!$connection) {
+  die("Sorry database not connected!" . mysqli_connect_error());
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $title = $_POST['title'];
+  $description = $_POST['description'];
+
+  $sql = "INSERT INTO `notes` (`title`, `description`) VALUES ('$title', '$description')";
+  $result = mysqli_query($connection, $sql);
+
+  if (!$result) {
+
+    echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+  } else {
+    $insert = true;
+  }
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="webnx-logo.png" alt="logo">
+        </div>
+        <ul class="navbar-center">
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Capabilities</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Discover WebNX</a></li>
+        </ul>
+        <div class="navbar-right" id="navbar-right">
+            <button class="btn">Hire us</button>
+            <button class="btn">Register</button>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Capabilities</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Discover WebNX</a></li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
