@@ -38,10 +38,13 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
-.navbar-center li a:hover{
+
+.navbar-center li a:hover {
     background-color: #333;
-    animation-duration: 0.5ms;
+    color: #ddd;
 }
 
 .navbar-right {
@@ -65,7 +68,7 @@ body {
 
 .menu-toggle {
     display: none;
-    background-color: #007bff;
+    background-color: #797979;
     color: white;
     border: none;
     padding: 10px;
@@ -81,10 +84,11 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: #333;
+    background-color: #000000;
     padding-top: 60px;
-    transition: 0.3s;
+    transition: 0.8s;
     z-index: 999;
+    animation-duration: 0.5ms;
 }
 
 .sidebar ul {
@@ -102,12 +106,14 @@ body {
     color: #fff;
     text-decoration: none;
     display: block;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .sidebar ul li a:hover {
     background-color: #575757;
+    color: #ddd;
 }
-
 
 @media screen and (max-width: 950px) {
     .navbar-center {
@@ -121,7 +127,18 @@ body {
     .sidebar.show {
         display: block;
     }
-    .navbar-right{
+
+    .navbar-right {
         display: none;
+    }
+
+    .sidebar ul li a {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #575757;
+        color: #ddd;
     }
 }
